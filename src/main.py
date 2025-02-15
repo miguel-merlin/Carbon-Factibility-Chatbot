@@ -26,7 +26,6 @@ vectorstore = FAISS.from_documents(docs, embeddings)
 def retrieve_docs(query, k=3):
     """Retrieve top-k relevant document chunks for a given query."""
     results = vectorstore.similarity_search(query, k=k)
-    # Concatenate the content from the retrieved documents
     return "\n".join([doc.page_content for doc in results])
 
 
@@ -61,8 +60,8 @@ def router_node(state: State) -> dict:
 def route_decision(state: State) -> str:
     if state["decision"] == "model_info":
         return "model_info"
-    elif state["decision"] == "model_inputs":
-        return "model_params_node"
+    elif state["decision"] == "model_params_node":
+        return "model_inputs"
     return END
 
 

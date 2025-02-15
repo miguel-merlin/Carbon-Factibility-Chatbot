@@ -1,0 +1,14 @@
+{
+    "dependencies": [
+        "langchain_groq",
+        "langchain_core",
+        "langgraph",
+        "langchain",
+        "pydantic",
+        "typing_extensions"
+    ],
+    "graphs": {
+        "carbon_capture_agent": "./carbon_agent.py:agent"
+    },
+    "env": "./.env"
+}

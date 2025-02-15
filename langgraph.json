@@ -8,7 +8,7 @@
         "typing_extensions"
     ],
     "graphs": {
-        "carbon_capture_agent": "./carbon_agent.py:agent"
+        "carbon_capture_agent": "./src/carbon_agent.py:agent"
     },
     "env": "./.env"
 }

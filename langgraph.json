@@ -6,10 +6,10 @@
         "langchain",
         "pydantic",
         "typing_extensions",
-        "./src/"
+        "./agent/"
     ],
     "graphs": {
-        "carbon_capture_agent": "./src/carbon_agent.py:graph"
+        "carbon_capture_agent": "./agent/carbon_agent.py:graph"
     },
     "env": "./.env"
 }

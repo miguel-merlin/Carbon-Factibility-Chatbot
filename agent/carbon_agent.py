@@ -478,4 +478,4 @@ Response:"""
         }
 
 
-graph = ConversationMemoryGraph()
+graph = ConversationMemoryGraph().workflow

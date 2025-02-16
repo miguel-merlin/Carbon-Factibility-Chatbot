@@ -6,6 +6,9 @@
         "langchain",
         "pydantic",
         "typing_extensions",
+        "langchain-community",
+        "langchain-chroma",
+        "chromadb",
         "./agent/"
     ],
     "graphs": {
